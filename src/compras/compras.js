@@ -5,7 +5,6 @@ const calcularTotal = (ferramentas, comprar) => {
         throw new Error("Ambas as listas precisam ter ao menos um item.");
     }
     
-    console.log(comprar)
     if (comprar.includes('Selenium') || comprar.includes('Cypress')) {
         throw new Error("Nenhuma ferramenta desejada encontrada.");
     }
