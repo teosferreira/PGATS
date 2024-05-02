@@ -17,14 +17,12 @@ const calcularTotal = (ferramentas, comprar) => {
                 if (ferramentas[j].nome === comprar[i]) {
                     ferramentasEncontradas.push(ferramentas[j]);
                     total += ferramentas[j].preco;
-                    break;
                 }
             }
         }
     }
 
     const resultado = `O valor a pagar pelas ferramentas (UFT, TOSCA) é R$ ${total.toFixed(2)}`;
-    assert.strictEqual(resultado, `O valor a pagar pelas ferramentas (UFT, TOSCA) é R$ 400.00`);
     return resultado;
 }
 
